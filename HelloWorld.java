@@ -8,5 +8,7 @@ public class HelloWorld {
         char lastInitial = 'w';
         boolean perfectAttendance = true;
         System.out.println(studentAge);
+        String newString = "java string ref";
+        System.out.println(newString);
     }
 }

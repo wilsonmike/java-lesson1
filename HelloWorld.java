@@ -10,5 +10,7 @@ public class HelloWorld {
         System.out.println(studentAge);
         String newString = "java string ref";
         System.out.println(newString);
+        char stringCharacter = newString.charAt(0);
+        System.out.println(stringCharacter);
     }
 }

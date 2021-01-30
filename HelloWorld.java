@@ -42,5 +42,22 @@ public class HelloWorld {
             }
         }
         System.out.println("Playing next song");
+        // multiple choice code block
+        String question = "What is the largest planet in our solar system?";
+        String choiceOne = "Earth";
+        String choiceTwo = "Jupiter";
+        String choiceThree = "Saturn";
+
+        String correctAnswer = choiceTwo;
+        System.out.println(question);
+        System.out.println("Choose one of the following... " + choiceOne + ' ' + choiceTwo + ' ' + choiceThree);
+        Scanner answer = new Scanner(System.in);
+        String userAnswer = answer.next();
+        if (correctAnswer.equals(userAnswer)) {
+            System.out.println("Congrats, you got it right!");
+        } else {
+            System.out.println("Sorry you got this one wrong :(");
+        }
+
     }
 }

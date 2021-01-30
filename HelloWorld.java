@@ -19,5 +19,16 @@ public class HelloWorld {
         Scanner input = new Scanner(System.in);
         gpa = input.nextDouble();
         System.out.println("Your gpa is " + gpa);
+        // start of lesson 3
+        // relational operators
+        // >, < , == , >= , <=, and !=
+        System.out.println("Pick a number between 1 and 10");
+        Scanner scanner = new Scanner(System.in);
+        int inputtedNum = scanner.nextInt();
+        if (inputtedNum < 5) {
+            System.out.println("You won 1,000 shares of $GME");
+        } else {
+            System.out.println("You picked the wrong number, you are short 1,000 shares of $GME");
+        }
     }
 }

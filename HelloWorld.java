@@ -30,5 +30,17 @@ public class HelloWorld {
         } else {
             System.out.println("You picked the wrong number, you are short 1,000 shares of $GME");
         }
+        // while loops in java
+        Scanner song = new Scanner(System.in);
+        boolean isOnRepeat = true;
+        while (isOnRepeat) {
+            System.out.println("Playing current song");
+            System.out.println("Would you like to take this song off of repeat? If so, answer yes");
+            String userInput = input.next();
+            if (userInput.equals("yes")) {
+                isOnRepeat = false;
+            }
+        }
+        System.out.println("Playing next song");
     }
 }

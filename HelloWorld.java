@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class HelloWorld {
+
     public static void main(String[] args) {
         System.out.println("Lesson One Console App");
         // data types
@@ -59,5 +60,15 @@ public class HelloWorld {
             System.out.println("Sorry you got this one wrong :( The correct answer is " + correctAnswer);
         }
 
+        // functions lesson 5
+
+    }
+
+    public static void announceDeveloperTeaTime() {
+        System.out.println("Waiting for developer tea time...");
+        System.out.println("Type a random word and press Enter to start developer tea time");
+        Scanner random = new Scanner(System.in);
+        random.next();
+        System.out.println("It's developer tea time!");
     }
 }

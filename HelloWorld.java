@@ -73,6 +73,9 @@ public class HelloWorld {
         System.out.println("Each individual in the group owes " + individualMealPrice);
         double result = Math.pow(2, 5);
         System.out.println(result);
+        // salary functions
+        double salary = salaryCalculator(40, 15);
+        System.out.println(salary);
     }
 
     public static void announceDeveloperTeaTime() {
@@ -92,4 +95,15 @@ public class HelloWorld {
     }
     // built in functions in java
 
+    // salary calculator
+    public static double salaryCalculator(double hoursPerWeek, double amountPerHour) {
+        if (hoursPerWeek < 0) {
+            return -1;
+        }
+        if (amountPerHour < 0) {
+            return -1;
+        }
+        double weeklyPaycheck = hoursPerWeek * amountPerHour;
+        return weeklyPaycheck * 52;
+    }
 }

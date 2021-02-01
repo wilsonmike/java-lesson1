@@ -71,6 +71,8 @@ public class HelloWorld {
         double individualMealPrice = groupTotal / 5;
         System.out.println("The group total is " + groupTotal);
         System.out.println("Each individual in the group owes " + individualMealPrice);
+        double result = Math.pow(2, 5);
+        System.out.println(result);
     }
 
     public static void announceDeveloperTeaTime() {
@@ -88,5 +90,6 @@ public class HelloWorld {
         double result = listedMealPrice + tip + tax;
         return result;
     }
+    // built in functions in java
 
 }

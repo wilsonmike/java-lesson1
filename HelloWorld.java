@@ -61,7 +61,7 @@ public class HelloWorld {
         }
 
         // functions lesson 5
-
+        announceDeveloperTeaTime();
     }
 
     public static void announceDeveloperTeaTime() {
@@ -71,4 +71,5 @@ public class HelloWorld {
         random.next();
         System.out.println("It's developer tea time!");
     }
+
 }

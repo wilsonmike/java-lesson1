@@ -67,7 +67,10 @@ public class HelloWorld {
         // functions lesson 5
         announceDeveloperTeaTime();
         calcTotalMealPRice(15, .2, .08);
-        calcTotalMealPRice(25, .18, .08);
+        double groupTotal = calcTotalMealPRice(25, .18, .08);
+        double individualMealPrice = groupTotal / 5;
+        System.out.println("The group total is " + groupTotal);
+        System.out.println("Each individual in the group owes " + individualMealPrice);
     }
 
     public static void announceDeveloperTeaTime() {
@@ -79,11 +82,11 @@ public class HelloWorld {
     }
 
     // parameters in java
-    public static void calcTotalMealPRice(double listedMealPrice, double tipRate, double taxRate) {
+    public static double calcTotalMealPRice(double listedMealPrice, double tipRate, double taxRate) {
         double tip = tipRate * listedMealPrice;
         double tax = taxRate * listedMealPrice;
         double result = listedMealPrice + tip + tax;
-        System.out.println("Your total meal price is " + result);
+        return result;
     }
 
 }
